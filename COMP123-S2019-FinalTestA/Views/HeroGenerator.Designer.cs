@@ -747,7 +747,7 @@ namespace COMP123_S2019_FinalTestA.Views
             this.NextButton.TabIndex = 1;
             this.NextButton.Text = "Next";
             this.NextButton.UseVisualStyleBackColor = true;
-            this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
+
             // 
             // BackButton
             // 
@@ -758,7 +758,7 @@ namespace COMP123_S2019_FinalTestA.Views
             this.BackButton.TabIndex = 1;
             this.BackButton.Text = "Back";
             this.BackButton.UseVisualStyleBackColor = true;
-            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
+
             // 
             // HeroGenerator
             // 
