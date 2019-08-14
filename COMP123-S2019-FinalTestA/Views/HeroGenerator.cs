@@ -7,8 +7,8 @@ using System.Text;
 using System.Windows.Forms;
 
 /*
- * STUDENT NAME: 
- * STUDENT ID:
+ * STUDENT NAME: JEANNERY MAE BALAGOT
+ * STUDENT ID: 301051646
  * DESCRIPTION: This is the Here Generator Form
  */
 
