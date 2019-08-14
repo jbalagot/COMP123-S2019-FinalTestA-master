@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 /*
- * STUDENT NAME: JEANNERY MAE BALAGOT
+ * STUDENT NAME: Jeannery Mae Balagot
  * STUDENT ID: 301051646
  * DESCRIPTION: This is the Hero Data Container Class
  */
