@@ -20,7 +20,10 @@ namespace COMP123_S2019_FinalTestA.Views
     {
         public List<string> FirstNameList = new List<string>();
         public List<string> LastNameList = new List<string>();
-        
+
+        // Random object that would generate a random number
+        public Random random = new Random();
+
         public HeroGenerator()
         {
             InitializeComponent();
@@ -82,6 +85,18 @@ namespace COMP123_S2019_FinalTestA.Views
             string lname = LastNameList[random.Next(0, (listCount - 1))];
             LastNameDataLabel.Text = lname;
         }
+        /// <summary>
+        /// Call the LoadNames method and call the GenerateNames method upon Form load event
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void CharacterGeneratorForm_Load(object sender, EventArgs e)
+        {
+            LoadNames();
+            GenerateNames();
+            
+        }
+
         private void BackButton_Click(object sender, EventArgs e)
         {
             if (MainTabControl.SelectedIndex != 0)
