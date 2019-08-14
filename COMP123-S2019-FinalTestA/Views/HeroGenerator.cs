@@ -97,6 +97,20 @@ namespace COMP123_S2019_FinalTestA.Views
             
         }
 
+        /// <summary>
+        /// Click Event that calls the GenerateNames method
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void GenerateNameButton_Click(object sender, EventArgs e)
+        {
+            GenerateNames();
+
+           
+            Program.character.FirstName = FirstNameLabel.Text;
+            Program.character.LastName = LastNameLabel.Text;
+        }
+
         private void BackButton_Click(object sender, EventArgs e)
         {
             if (MainTabControl.SelectedIndex != 0)
