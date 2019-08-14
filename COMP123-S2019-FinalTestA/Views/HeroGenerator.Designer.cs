@@ -735,7 +735,7 @@ namespace COMP123_S2019_FinalTestA.Views
             this.HeroHeaderLabel.Name = "HeroHeaderLabel";
             this.HeroHeaderLabel.Size = new System.Drawing.Size(108, 40);
             this.HeroHeaderLabel.TabIndex = 3;
-            this.HeroHeaderLabel.Text = "Hero ";
+            this.HeroHeaderLabel.Text = "Hero\'s Name";
             this.HeroHeaderLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // NameHeaderLabel
