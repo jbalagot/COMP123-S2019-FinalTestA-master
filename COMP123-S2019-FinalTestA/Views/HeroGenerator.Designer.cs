@@ -71,6 +71,7 @@ namespace COMP123_S2019_FinalTestA.Views
             this.PowerLabel3 = new System.Windows.Forms.Label();
             this.InventoryHeaderLabel = new System.Windows.Forms.Label();
             this.CharacterSheet = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.HeroToolStrip = new System.Windows.Forms.ToolStrip();
             this.openToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.saveToolStripButton = new System.Windows.Forms.ToolStripButton();
@@ -88,12 +89,15 @@ namespace COMP123_S2019_FinalTestA.Views
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.NextButton = new System.Windows.Forms.Button();
             this.BackButton = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.MainTabControl.SuspendLayout();
             this.IdentityPage.SuspendLayout();
             this.AbilityPage.SuspendLayout();
             this.AbilityTableLayoutPanel.SuspendLayout();
             this.PowersPage.SuspendLayout();
             this.CharacterSheet.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
             this.HeroToolStrip.SuspendLayout();
             this.HeroMenuStrip.SuspendLayout();
             this.SuspendLayout();
@@ -532,7 +536,7 @@ namespace COMP123_S2019_FinalTestA.Views
             | System.Windows.Forms.AnchorStyles.Right)));
             this.PowerLabel1.AutoSize = true;
             this.PowerLabel1.BackColor = System.Drawing.Color.Gainsboro;
-            this.PowerLabel1.Location = new System.Drawing.Point(107, 158);
+            this.PowerLabel1.Location = new System.Drawing.Point(93, 158);
             this.PowerLabel1.Margin = new System.Windows.Forms.Padding(3);
             this.PowerLabel1.Name = "PowerLabel1";
             this.PowerLabel1.Size = new System.Drawing.Size(79, 24);
@@ -602,6 +606,7 @@ namespace COMP123_S2019_FinalTestA.Views
             // 
             // CharacterSheet
             // 
+            this.CharacterSheet.Controls.Add(this.tableLayoutPanel1);
             this.CharacterSheet.Controls.Add(this.HeroToolStrip);
             this.CharacterSheet.Controls.Add(this.HeroMenuStrip);
             this.CharacterSheet.Location = new System.Drawing.Point(4, 33);
@@ -612,6 +617,25 @@ namespace COMP123_S2019_FinalTestA.Views
             this.CharacterSheet.TabIndex = 3;
             this.CharacterSheet.Text = "Character Sheet";
             this.CharacterSheet.UseVisualStyleBackColor = true;
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 4;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 29.17647F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70.82353F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 70F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 101F));
+            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label2, 0, 1);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(5, 56);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 4;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 43.66197F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 56.33803F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 45F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 75F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(601, 197);
+            this.tableLayoutPanel1.TabIndex = 2;
             // 
             // HeroToolStrip
             // 
@@ -758,6 +782,24 @@ namespace COMP123_S2019_FinalTestA.Views
             this.BackButton.Text = "Back";
             this.BackButton.UseVisualStyleBackColor = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(3, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(108, 24);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Hero Name";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(3, 33);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(61, 24);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Name";
+            // 
             // HeroGenerator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
@@ -778,6 +820,8 @@ namespace COMP123_S2019_FinalTestA.Views
             this.PowersPage.PerformLayout();
             this.CharacterSheet.ResumeLayout(false);
             this.CharacterSheet.PerformLayout();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
             this.HeroToolStrip.ResumeLayout(false);
             this.HeroToolStrip.PerformLayout();
             this.HeroMenuStrip.ResumeLayout(false);
@@ -842,5 +886,8 @@ namespace COMP123_S2019_FinalTestA.Views
         private System.Windows.Forms.Label PowerLabel2;
         private System.Windows.Forms.Label PowerLabel3;
         private System.Windows.Forms.Label InventoryHeaderLabel;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

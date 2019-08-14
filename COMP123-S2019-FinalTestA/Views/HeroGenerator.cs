@@ -111,7 +111,23 @@ namespace COMP123_S2019_FinalTestA.Views
             Program.character.LastName = LastNameLabel.Text;
         }
 
-        private void BackButton_Click(object sender, EventArgs e)
+        /// <summary>
+        /// Method that generate random numbers ranging from 10 to 50 for each Ability 
+        /// (Fighting,  Agility,  Strength,  Endurance,  Reason, Intuition, Psyche and Popularity
+        /// </summary>
+        private void GenerateAbilities()
+        {
+            Program.character.Fighting = $"{random.Next(10, 50)}";
+            Program.character.Agility = $"{random.Next(10, 50)}";
+            Program.character.Strength = $"{random.Next(10, 50)}";
+            Program.character.Endurance = $"{random.Next(10, 50)}";
+            Program.character.Reason = $"{random.Next(10, 50)}";
+            Program.character.Intuition = $"{random.Next(10, 50)}";
+            Program.character.Psyche = $"{random.Next(10, 50)}";
+            Program.character.Popularity = $"{random.Next(10, 50)}";
+        }
+    
+    private void BackButton_Click(object sender, EventArgs e)
         {
             if (MainTabControl.SelectedIndex != 0)
             {
@@ -131,8 +147,6 @@ namespace COMP123_S2019_FinalTestA.Views
                 MainTabControl.SelectedIndex++;
             }
         }
-
-        
 
         
     }
