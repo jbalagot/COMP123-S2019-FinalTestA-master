@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 
 /*
- * STUDENT NAME: 
- * STUDENT ID:
+ * STUDENT NAME: JEANNERY MAE BALAGOT
+ * STUDENT ID: 301051646
  * DESCRIPTION: This is the Power Class
  */
 
